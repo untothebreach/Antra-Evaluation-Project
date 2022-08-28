@@ -1,10 +1,10 @@
-export const Api = (() =>{
-     const baseURL = 'http://localhost:4232';
-     const path = 'courseList';
+export const Api = (() => {
+    const baseUrl = "http://localhost:4232/courseList";
 
-     const getCourses = () => fetch([baseURL, path]).then(response => response.json()).then(json => console.log(json));
-     const selectCourses = () => fetch()
-          return {
-          getCourses,
-     };
+    const getCourses = () => 
+        fetch(baseUrl).then(response => response.json());
+
+    return {
+        getCourses,
+    };
 })();

@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Antra Evaluation Project</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <script type="module" src="app.js"></script>
-
-    </head>
-
-    <body>
-
-        <main class="content">
-            <section class="Course">
-                 <div id="AvailableCourses">
-                 </div>
-                 <div id="SelectedCourses">
-                 </div>
-                <div class="TotalCredits">
-                      <p>Total Credits: 0</p>
-                      <button class="SelectButton">Select Courses</button>
-                 </div>
-            </section>
-       </main>
-        
-    </body>
-
-
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Antra Evaluation Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="name" content="Mohamed (Mike) Beydoun">
+		<link rel="stylesheet" href="index.css" />
+		<script type="module" src="index.js"></script>
+	</head>
+	<body>
+		<h1 class="header">Course Selection Page</h1>
+		<br>
+		<br>
+		<main class="content">
+			<div class="coursesContainer">
+				<header class="coursesContainer_header">Available Courses</header>
+				<ul class="courses" id="available"></ul>
+			</div>
+			<div class="coursesContainer">
+				<header class="coursesContainer_header">Selected Courses</header>
+				<ul class="courses" id="selected"></ul>
+			</div>
+		</main>
+		<h3 class="header">Total Credits: <span class="credits">0 </span>
+			<button id="select">Select</button>
+		</h3>
+	</body>
 </html>
